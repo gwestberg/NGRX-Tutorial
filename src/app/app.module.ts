@@ -7,6 +7,7 @@ import { MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/mate
 import { AppRoutes } from './app.routing';
 import { AppComponent } from './app.component';
 import { BananaComponent } from './banana/banana.component';
+import {RotService} from './rot.service';
 
 import { StoreModule } from '@ngrx/store';
 import { reducers, initialState, effects } from './app.state';
