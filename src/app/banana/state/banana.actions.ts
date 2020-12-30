@@ -39,7 +39,7 @@ export class InitiateTimeHop implements Action{
 export class TimeHopComplete implements Action{
   readonly type: string = TIME_HOP_COMPLETE ;
 
-  constructor(public payload: number){
+  constructor(public payload: any){
     console.log('ACTION ' +TIME_HOP_COMPLETE );
   }
 }

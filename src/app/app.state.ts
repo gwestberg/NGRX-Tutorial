@@ -10,4 +10,9 @@ export const initialState: AppState = {
 export const reducers: ActionReducerMap<AppState> = {
   banana: bananaStore.reducer
 }
+export const effects: Array<any> = [
+    bananaStore.BananaEffects
+];
+
+
 export const getMyBanana = (s: AppState) => s.banana;

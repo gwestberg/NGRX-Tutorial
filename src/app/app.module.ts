@@ -9,8 +9,9 @@ import { AppComponent } from './app.component';
 import { BananaComponent } from './banana/banana.component';
 
 import { StoreModule } from '@ngrx/store';
-import { reducers, initialState } from './app.state';
+import { reducers, initialState, effects } from './app.state';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   imports:      [ 
@@ -19,6 +20,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    EffectsModule.forRoot(effects),
     RouterModule.forRoot(AppRoutes),
     StoreModule.forRoot(reducers, {initialState}),
     StoreDevtoolsModule.instrument({
